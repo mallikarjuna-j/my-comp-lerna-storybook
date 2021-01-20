@@ -1,15 +1,10 @@
 {
-  "name": "my-storybook-theme",
+  "name": "my-storybook-button",
   "version": "0.1.0",
-  "description": "Example theme component",
+  "description": "Example base components",
   "main": "lib/index.js",
   "module": "src/index.js",
-  "files": [
-    "dist",
-    "es",
-    "esm",
-    "lib"
-  ],
+  "files": ["dist", "es", "esm", "lib"],
   "directories": {
     "lib": "src"
   },

@@ -1,3 +1,0 @@
-# Card
-
-Simple card component.
