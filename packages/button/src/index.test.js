@@ -1,7 +1,7 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 
-import Button from ".";
+import Button from "./components/button";
 
 describe("Button", () => {
   it("renders", () => {

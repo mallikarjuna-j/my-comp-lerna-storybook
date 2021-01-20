@@ -5,8 +5,8 @@ import { withKnobs, text } from "@storybook/addon-knobs";
 import { withReadme } from "storybook-readme";
 import { ThemeProvider } from "styled-components";
 
-import { GlobalStyle, theme } from "../../../../theme/src";
-import ButtonReadme from "../../../README.md";
+import { GlobalStyle, theme } from "../../theme/src";
+import ButtonReadme from "../README.md";
 
 import Button from ".";
 
