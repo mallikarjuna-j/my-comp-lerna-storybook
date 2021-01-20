@@ -1,6 +1,6 @@
-import React from "react";
-import { get } from "lodash";
-import styled from "styled-components";
+import React from "react"
+import { get } from "lodash"
+import styled from "styled-components"
 
 export const StyledButton = styled.button`
   border: 2px solid ${props => get(props, "theme.colors.accent") || "#000"};
