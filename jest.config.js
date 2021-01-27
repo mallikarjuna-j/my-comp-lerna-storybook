@@ -12,6 +12,7 @@ module.exports = {
   collectCoverageFrom: [
     'packages/**/*.js',
     '!packages/**/coverage/**/*.js',
+    '!packages/**/lib/',
     '!packages/**/dist/**/*.js',
     '!packages/**/prop-types.js',
     '!packages/**/*.stories.js',
@@ -20,6 +21,10 @@ module.exports = {
     '!packages/__tests__/**/*.js',
     '!packages/__mocks__/**/*.js',
   ],
+  moduleNameMapper: {
+    "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "./app/tests/mocks/FileMock.js",
+    "\\.(css|less)$": "identity-obj-proxy"
+  },
   collectCoverage: true,
   modulePaths: ['<rootDir>'],
   notify: true,
@@ -35,7 +40,7 @@ module.exports = {
     '<rootDir>/packages/*/(build|dist|node_modules)/',
   ],
   transform: {
-    '.+\\.js$': 'babel-jest',
+    "^.+\\.(js|jsx)$": 'babel-jest',
   },
   testEnvironment: 'jest-environment-jsdom-global',
   verbose: false, // if you want to see all tests for each suite, change to true

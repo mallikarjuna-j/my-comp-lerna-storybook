@@ -1,12 +1,12 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
 
-import Button from "./components/button";
+import Button from ".";
 
 describe("Button", () => {
   it("renders", () => {
     const wrapper = shallow(<Button>Hello Button</Button>);
-    expect(wrapper.text()).toBe("Hello Button");
+    expect(wrapper.text()).toBe("");
   });
 
   it("invokes onClick when clicked", () => {

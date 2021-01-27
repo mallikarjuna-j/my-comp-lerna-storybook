@@ -26,6 +26,7 @@ module.exports = {
      * - https://github.com/storybooks/storybook/issues/3346#issuecomment-423719241
      */
     "@babel/plugin-transform-modules-commonjs",
+    // "transform-es2015-modules-commonjs", "@babel/plugin-proposal-class-properties"
     [
       "babel-plugin-styled-components",
       {
